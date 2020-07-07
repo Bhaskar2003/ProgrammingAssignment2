@@ -5,7 +5,9 @@
 ##if the inversse has already been computed berfore on the same matrix
 
 
-
+##This function defines the setters and getters.
+##It also initialises the values of variables which will be used
+##to store the CACHED INVERSE.
 makeCacheMatrix <- function(x = matrix()) {
   i<-NULL
   set<-function(y){
@@ -22,7 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Returns the inverse (returns the cached value or computes(if not computed before))
+## Returns the INVERSE
+##(returns the cached value or computes(if not computed before))
 
 cacheSolve <- function(x,...) {
   i<-x$gettinginverse()
